@@ -1,0 +1,53 @@
+#titulo{
+    color: #57585a;
+    font-size: 25px;
+}
+
+.container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 60% 20%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Header Header Header"
+      "Main Main Main"
+      "Footer Footer Footer";
+  }
+    
+.Header { 
+    display: flex;
+    align-items: center;
+    background-color: #e3e4e5;
+    padding: 130px 0 0 0;
+  }
+  
+.Main { 
+    grid-area: Main; 
+    background-color: red; 
+    display:flex;
+    }
+  
+.Footer { 
+    display: flex;
+    justify-content: space-between;
+    align-items: normal;
+    padding: 10px;
+    background-color: #e3e4e5;
+    }
+
+
+#menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar{
+    position: relative;
+    float: left;
+}
