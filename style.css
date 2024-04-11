@@ -136,6 +136,8 @@
         margin-bottom: 2vw;
     }
 
+
+    
 }
 
 .centrarTexto{
@@ -158,33 +160,6 @@
 main{
     background-color: whitesmoke;
 }
-
-.containerFooter {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "Sigamos-Conectados Sigamos-Conectados Sigamos-Conectados Sigamos-Conectados "
-      "Logos Logos Logos Logos"
-      "Linea-divisora Linea-divisora Linea-divisora Linea-divisora"    
-      "Medios-de-envio Medios-de-envio Medios-de-envio Medios-de-envio"
-      "Medios-de-pago Medios-de-pago Medios-de-pago Medios-de-pago"
-      "Copyright Copyright Copyright Copyright";    
-  }
-  
-  .Sigamos-Conectados { grid-area: Sigamos-Conectados; }
-
-  .Logos{ grid-area: Logos; text-align:center;}
-  
-  .Linea-divisora { grid-area: Linea-divisora; }
-
-  .Medios-de-envio { grid-area: Medios-de-envio; }
-  
-  .Medios-de-pago { grid-area: Medios-de-pago; }
-  
-  .Copyright { grid-area: Copyright; text-align: center; font-size: small;}
 
 .centradoTextoFooter{
     text-align: center;
@@ -249,4 +224,42 @@ footer{
     text-align: center;
 }
 
+.containerFooter2{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Sigamos-Conectados Sigamos-Conectados Sigamos-Conectados Sigamos-Conectados "
+      "Logos Logos Logos Logos"
+      "Linea-divisora Linea-divisora Linea-divisora Linea-divisora"
+      "Contacto Contacto Contacto Contacto"    
+      "Medios-de-envio Medios-de-envio Medios-de-envio Medios-de-envio"
+      "Medios-de-pago Medios-de-pago Medios-de-pago Medios-de-pago"
+      "Copyright Copyright Copyright Copyright";    
+  }
+  
+  .Sigamos-Conectados { grid-area: Sigamos-Conectados; }
 
+  .Logos{ grid-area: Logos; text-align:center;}
+  
+  .Linea-divisora { grid-area: Linea-divisora; }
+
+  .Contacto {grid-area: Contacto;}
+
+  .Medios-de-envio { grid-area: Medios-de-envio; }
+  
+  .Medios-de-pago { grid-area: Medios-de-pago; }
+  
+  .Copyright { grid-area: Copyright; text-align: center; font-size: small;}
+
+
+.Contacto h5, .Contacto i, .Contacto p {
+    display: inline-block;
+}
+
+#espacio{
+    margin-right: 1vw;
+}
