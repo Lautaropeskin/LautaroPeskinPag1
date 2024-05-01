@@ -8,6 +8,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav">
@@ -30,15 +32,13 @@
               <li class="nav-item">
                 <a class="nav-link" href="registro.html">Registrarse/Inicio sesion</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="bi bi-bag"></i></a>
-              </li>
             </ul>
           </div>
         </div>
     </nav>
 
    <main>
+    <h5>(Proximamente el filtrado y las categorias)</h5>
     <h4 class="espaciado">Filtrar por:</h4>
     <div id="selector" class="inline-element">
         <select class="form-select" aria-label="Default select example">
@@ -74,30 +74,29 @@
         <div class="card">
           <img src="imagenes/Anillo corazon nacar.jpg" class="card-img-top" alt="anillo">
           <div class="card-body">
-            <p class="card-text">Anillo dorado con corazon de nacar <br><br>Precio:$15.800</p>
-            <a href="#" class="btn btn-primary">Agregar a la bolsa</a>
+            <p class="card-text">Anillo dorado con corazon de nacar <br><br>Precio: $15800</p>
+            <button class="botonComprar" id="botonAnilloCorazon">Agregar a la bolsa</button>
           </div>
         </div>
         <div class="card">
           <img src="imagenes/Aros flor pavee.jpg" class="card-img-top" alt="aro">
           <div class="card-body">
-            <p class="card-text">Aro plateado con flor pavee <br><br>Precio:$125.400</p>
-            <a href="#" class="btn btn-primary">Agregar a la bolsa</a>
+            <p class="card-text">Aro plateado con flor pavee <br><br>Precio: $125400</p>
+            <button class="botonComprar" id="botonAroFlor">Agregar a la bolsa</button>
           </div>
         </div>
         <div class="card">
           <img src="imagenes/Pulsera tenis ajustable con piedras verdes.jpg" class="card-img-top" alt="Pulsera">
           <div class="card-body">
-            <p class="card-text">Pulsera dorada ajustable con piedras verdes <br>Precio:$30.400</p>
-            <a href="#" class="btn btn-primary">Agregar a la bolsa</a>
+            <p class="card-text">Pulsera dorada ajustable con piedras verdes <br>Precio: $30400</p>
+            <button class="botonComprar" id="botonPulseraPiedrasVerdes">Agregar a la bolsa</button>
           </div>
         </div>
         <div class="card">
           <img src="imagenes/collar 5 mariposas.jpg" class="card-img-top" alt="collar">
-        
           <div class="card-body">
-            <p class="card-text">Collar plateado con cinco mariposas <br><br>Precio:$33.000</p>
-            <a href="#" class="btn btn-primary">Agregar a la bolsa</a>
+            <p class="card-text">Collar plateado con cinco mariposas <br><br>Precio: $33000</p>
+            <button class="botonComprar" id="botonCollarMariposas">Agregar a la bolsa</button>
           </div>
         </div>
     </div>
@@ -106,34 +105,50 @@
         <div class="card">
           <img src="imagenes/Aros con cadena rosa y piedra ovalada.jpg" class="card-img-top" alt="aro">
           <div class="card-body">
-            <p class="card-text">Aro con cadena rosa y piedra ovalada <br><br>Precio:$14.500</p>
-            <a href="#" class="btn btn-primary">Agregar a la bolsa</a>
+            <p class="card-text">Aro con cadena rosa y piedra ovalada <br><br>Precio: $14500</p>
+            <button class="botonComprar" id="botonAroCadenaRosa">Agregar a la bolsa</button>
           </div>
         </div>
         <div class="card">
           <img src="imagenes/Esclava doble corazon pavee.jpg" class="card-img-top" alt="Pulsera">
           <div class="card-body">
-            <p class="card-text">Esclava rosa con doble corazon pavee <br><br>Precio:$54.700</p>
-            <a href="#" class="btn btn-primary">Agregar a la bolsa</a>
+            <p class="card-text">Esclava rosa con doble corazon pavee <br><br>Precio: $54700</p>
+            <button class="botonComprar" id="botonEsclavaDobleCorazon">Agregar a la bolsa</button>
           </div>
         </div>
         <div class="card">
           <img src="imagenes/Collar trebol con piedras blancas.jpg" class="card-img-top" alt="Collar">
           <div class="card-body">
-            <p class="card-text">Collar dorado con treboles verdes y piedras blancas <br>Precio:$44.000</p>
-            <a href="#" class="btn btn-primary">Agregar a la bolsa</a>
+            <p class="card-text">Collar dorado con treboles verdes y piedras blancas <br>Precio: $44000</p>
+            <button class="botonComprar" id="botonCollarTrebolesVerdes">Agregar a la bolsa</button>
           </div>
         </div>
         <div class="card">
           <img src="imagenes/anillo cobra.jpg" class="card-img-top" alt="Anillo">
           <div class="card-body">
-            <p class="card-text">Anillo dorado cobra <br><br>Precio:$26.400</p>
-            <a href="#" class="btn btn-primary">Agregar a la bolsa</a>
+            <p class="card-text">Anillo dorado cobra <br><br>Precio: $26400</p>
+            <button class="botonComprar" id="botonAnilloCobra">Agregar a la bolsa</button>
           </div>
         </div>
     </div>
 
+    <h3 class="centradoTextoFooter">Bolsa de compras <i class="bi bi-bag"></i></h3>
+    <ul id="lista-carrito">
+        <div class="producto-carrito">
+            <img src="imagen_del_producto.jpg" alt="Producto">
+            <p class="nombre-producto">Nombre del Producto</p>
+            <p class="cantidad">Cantidad: <input class="cantidad-producto" type="number" min="0" value="1" data-nombre="Nombre del Producto"></p>
+            <p class="subtotal">Subtotal: $100.00</p>
+            <button class="eliminar-producto">Eliminar</button>                
+        </div>
+    </ul>
+    <div id="total-pagar" class="centradoTextoFooter">Total a pagar: $0.00</div>
+    <div class="centradoTextoAbajo">
+        <button id="pagar">Pagar</button>
+        <button id="vaciar">Vaciar</button>
+    </div>
 </main>
+
 
 <footer>
   <div class="containerFooter2">

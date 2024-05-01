@@ -136,8 +136,20 @@
         margin-bottom: 2vw;
     }
 
+    #lista-carrito li {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
-    
+    #lista-carrito img {
+        margin-bottom: 10px;
+    }
+
+    #lista-carrito p {
+        margin-left: 0;
+    }
+
 }
 
 .centrarTexto{
@@ -262,4 +274,109 @@ footer{
 
 #espacio{
     margin-right: 1vw;
+}
+
+.contadorBolsa{
+    background-color: black;
+    border-radius: 100%;
+    color: white;
+    display: inline-block;
+    width: 15px;
+    line-height: 14px;
+    aspect-ratio: 1;
+    text-align: center;
+    position: absolute;
+}
+
+.botonComprar{
+    display: inline-block;
+    background-color: #0d6efd;
+    color: #fff;
+    padding: 7px 12px;
+    border: none;
+    border-radius: 6%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.botonComprar:hover {
+    background-color: #0056b3;
+}
+
+
+#lista-carrito {
+    padding: 0;
+}
+
+.producto-carrito {
+    display: flex;
+    align-items: center;
+}
+
+
+#total-pagar {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.centradoTextoAbajo{
+    text-align: center;
+    padding-bottom: 1vw;
+}
+
+#pagar{
+    background-color: #0d6efd;
+    color: #fff;
+    padding: 7px 12px;
+    border: none;
+    border-radius: 8%;
+    cursor: pointer;
+}
+
+#pagar:hover{
+    background-color: #0056b3;
+}
+
+#vaciar{
+    background-color: #0d6efd;
+    color: #fff;
+    padding: 7px 12px;
+    border: none;
+    border-radius: 8%;
+    cursor: pointer;
+}
+
+#vaciar:hover {
+    background-color: #0056b3;
+}
+
+
+#lista-carrito li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; 
+}
+
+#lista-carrito img {
+    width: 100px; 
+    height: auto;
+}
+
+#lista-carrito p {
+    margin-left: 10px;
+    flex-grow: 1;
+    display: block;
+}
+
+.eliminar-producto{
+    background-color: red;
+    color: black;
+    padding: 7px 12px;
+    border: none;
+    border-radius: 8%;
+    cursor: pointer;
+}
+
+.eliminar-producto:hover {
+    background-color:#d40000da;
 }
