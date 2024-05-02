@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
     modificadorCarrito();
 
     function modificadorCarrito() {
+        // Agrega el resto del código dentro de esta función
+
         // Agrega producto al carrito
         document.querySelectorAll('.botonComprar').forEach(boton => {
             boton.addEventListener('click', agregarProducto);
@@ -72,11 +74,17 @@ document.addEventListener('DOMContentLoaded', function() {
         //Funcionamiento boton para vaciar el carrito
         vaciarBoton.addEventListener('click', vaciarCarrito);
         
-        // Cargar los elementos del carrito del localStorage
+        // Cargar los elementos del carrito del localStorage solo si el carrito no está vacío
         if(localStorage.getItem('carrito')) {
             carrito = JSON.parse(localStorage.getItem('carrito'));
-            carritoMostrado();
-            actualizarTotal();
+            if (carrito.length > 0) {
+                carritoMostrado();
+                actualizarTotal();
+            } else {
+                limpiarCarritoHtml();
+            }
+        } else {
+            limpiarCarritoHtml();
         }
     }
 
