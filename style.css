@@ -1,7 +1,6 @@
 *{
     padding: 0%;
     margin: 0%;
-
 }
 
 #nav {
@@ -379,4 +378,13 @@ footer{
 
 .eliminar-producto:hover {
     background-color:#d40000da;
+}
+
+.tituloProductos{
+    text-align: center;
+    padding: 1vw;
+}
+
+.separado{
+    padding: 1vw;
 }
